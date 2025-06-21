@@ -6,7 +6,7 @@ drozer allows you to search for security vulnerabilities in apps and devices by 
 
 drozer provides tools to help you use, share and understand public Android exploits.
 
-drozer is open source software, maintained by WithSecure, and can be downloaded from: [https://labs.withsecure.com/tools/drozer/](https://labs.withsecure.com/tools/drozer/)
+drozer is open source software, maintained by Reversec, and can be downloaded from: [https://labs.withsecure.com/tools/drozer/](https://labs.withsecure.com/tools/drozer/)
 
 ## NOTE
 
@@ -20,8 +20,8 @@ Currently, the following known issues are present:
 
 To help with making sure drozer can be run on all systems, a Docker container was created that has a working build of drozer.
 
-* The Docker container and basic setup instructions can be found [here](https://hub.docker.com/r/withsecurelabs/drozer).
-* Instructions on building your own Docker container can be found [here](https://github.com/WithSecureLabs/drozer/tree/develop/docker).
+* The Docker container and basic setup instructions can be found [here](https://hub.docker.com/r/drozerdocker/drozer).
+* Instructions on building your own Docker container can be found [here](https://github.com/ReversecLabs/drozer/tree/develop/docker).
 
 ## Manual Building and Installation
 
@@ -42,7 +42,7 @@ You can use `pip` or `pipx` (preferably, if available) to install the latest rel
 pipx install drozer
 ```
 
-Alternatively, you can download individual [releases](https://github.com/WithSecureLabs/drozer/releases/) from GitHub and run:
+Alternatively, you can download individual [releases](https://github.com/ReversecLabs/drozer/releases/) from GitHub and run:
 
 ```shell
 pipx install ./drozer-*.whl
@@ -60,7 +60,7 @@ to ensure `pipx`-installed packages appear in your `PATH`
 To build drozer from source you can run.
 
 ```shell
-git clone https://github.com/WithSecureLabs/drozer.git
+git clone https://github.com/ReversecLabs/drozer.git
 cd drozer
 pip install .
 ```
@@ -90,7 +90,7 @@ set ANDROID_SDK = "C:\Users\drozerUser\AppData\Local\Android\sdk\platforms\andro
 
 drozer can be installed using Android Debug Bridge (adb).
 
-Download the latest drozer Agent [here](https://github.com/WithSecureLabs/drozer-agent/releases/latest).
+Download the latest drozer Agent [here](https://github.com/ReversecLabs/drozer-agent/releases/latest).
 
 ```shell
 adb install drozer-agent.apk
@@ -115,7 +115,7 @@ drozer console connect --server <phone's IP address>
 If you are using the Docker container, the equivalent command would be:
 
 ```
-docker run --net host -it withsecurelabs/drozer console connect --server <phone's IP address>
+docker run --net host -it drozerdocker/drozer console connect --server <phone's IP address>
 ```
 
 #### Option 2: Connect to the phone via USB
@@ -192,6 +192,6 @@ drozer is Open Source software, made great by contributions from the community.
 
 For full source code, to report bugs, suggest features and contribute patches please see our Github project:
 
-  <https://github.com/WithSecureLabs/drozer>
+  <https://github.com/ReversecLabs/drozer>
 
-Bug reports, feature requests, comments and questions can be submitted [here](https://github.com/WithSecureLabs/drozer/issues).
+Bug reports, feature requests, comments and questions can be submitted [here](https://github.com/ReversecLabs/drozer/issues).
